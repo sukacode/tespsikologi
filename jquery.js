@@ -15,17 +15,36 @@ $(document).ready(function () {
                             mendapatkan penanganan yang tepat.
                         </p>
                     </div>
+                <div id="baten" class="btn-container">
+                    <button class="btn">Ya, saya setuju</button>
+                    <button class="btn">Tidak, saya tidak setuju</button>
+    </div>
                     
-    </div>
-    <div class="btn-container">
-        <button class="btn" id="setuju">Ya, saya setuju</button>
-        <button class="btn" id="tidak-setuju">Tidak, saya tidak setuju</button>
-    </div>
-        `;
+    </div>`;
+
     $("#ques-container").append(html);
-  });
-  $("#setuju").click(function () {
-    html = "";
-    $("#hcontainer").empty();
+
+    //
+    $("#baten").click(function () {
+      $(".hcontainer").empty();
+      html = "";
+      html += `<div class="icontainer">
+        <div class="rules">
+            <p class="p-1">
+                Jawab pertanyaan berikut berdasarkan seberapa sering kamu mengalami situasi tersebut dalam kurun waktu 4
+                minggu terakhir.
+            </p>
+
+            <p class="p-2">Pilih jawaban yang paling menggambarkan diri kamu, karena <small> tidak ada jawaban yang
+                    benar dan
+                    salah</small></p>
+        </div>
+        <div id="btn-rules" class="btn-rules">
+            <button id="back" href="">Kembali</button>
+            <button id="next" href="">Lanjut</button>
+        </div>
+    </div>`;
+      $(".hcontainer").append(html);
+    });
   });
 });

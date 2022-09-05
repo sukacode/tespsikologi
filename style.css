@@ -21,7 +21,7 @@ body {
     display: flex;
     background-color: white;
     position: fixed;
-    overflow: hidden;
+
     align-items: center;
     width: 100%;
     height: 68px;
@@ -40,7 +40,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 600px;
+    flex-direction: column;
+    /* width: 600px; */
     height: 500px;
     padding-top: 120px;
     height: 30%;
@@ -48,20 +49,33 @@ body {
 }
 
 .wrapper {
-
+    display: flex;
     /* width: 100%; */
     /* height: auto; */
-
+    width: 40%;
     border: 2px solid red;
-    /* flex-direction: column; */
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+
     /* padding-top: 120px; */
 }
 
+
+
 .card {
+    display: flex;
+    flex-wrap: wrap;
     border: 2px solid white;
+    justify-content: center;
+    /* text-align: center; */
     background-color: #2222;
-    text-align: center;
+
+}
+
+.card img {
+
+    align-items: center;
 }
 
 .content h1 {
@@ -73,4 +87,20 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     color: lightslategray;
+}
+
+.button button {
+    font-family: Montserrat, sans-serif;
+    color: white;
+    margin: 32px;
+    padding: 15px 12px;
+    width: 200px;
+    height: 45px;
+    background-color: #2B80A3;
+    border-radius: 5px;
+    border: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }

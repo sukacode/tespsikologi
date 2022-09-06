@@ -497,6 +497,67 @@ $(document).ready(function () {
                                                     </div>
                                                 </div>`;
                             $(".content10").append(html);
+
+                            $("#baten").click(function () {
+                              $(".content10").empty();
+                              html = "";
+                              html += `<div class="content11">
+                                                        <div class="bar">
+                                                            <a href=""></a>
+                                                            <a href=""></a>
+                                                            <a href=""></a>
+                                                            <a href=""></a>
+                                                            <a href=""></a>
+                                                            <a href=""></a>
+                                                            <a href=""></a>
+                                                            <a href=""></a>
+                                                            <a href=""></a>
+                                                            <a href=""></a>
+                                                        </div>
+                                                
+                                                        <div class="pcontainer">
+                                                            <div class="pertanyaan1">
+                                                
+                                                                <h3>Pertanyaan
+                                                                </h3>
+                                                                <p>
+                                                                    Dalam 4 minggu terakhir, seberapa sering <span style="font-weight:bold;">Anda merasa tidak mampu menangani masalahmu sendiri?</span>
+                                                                </p>
+                                                            </div>
+                                                            <div id="baten" class="btn-pertanyaan">
+                                                                <button class="btn">Tidak Pernah</button>
+                                                                <button class="btn">Jarang</button>
+                                                                <button class="btn">Kadang-Kadang</button>
+                                                                <button class="btn">Sering</button>
+                                                                <button class="btn">Selalu</button>
+    
+                                                                <p style="font-size:smaller;">
+                                    11 dari 11
+                                  </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>`;
+                              $(".content10").append(html);
+
+                              $("#baten").click(function () {
+                                $(".content10").empty();
+                                html = "";
+                                html += `<div class="hcontainer">
+                                <div class="warning">
+                                    <p style="font-weight:smaller;">Email
+                                    </p>
+                                    <p>Isi dengan email yang aktif yang kamu gunakan
+                                    </p>
+                                </div>
+                                <div id="btn-container" class="btn-container">
+                                    <input id="baten" class="input" placeholder="Example : hallo@ibunda.id">
+                                    <p style="font-size:small; margin-bottom:10px;">1 dari 4
+                                    </p>
+                                </div>
+                            </div>`;
+                                $(".content10").append(html);
+                              });
+                            });
                           });
                         });
                       });

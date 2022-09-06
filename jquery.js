@@ -24,14 +24,13 @@ $(document).ready(function () {
              </div>`;
 
     $("#ques-container").append(html);
-  });
-  //
-  $("#baten").click(function () {
-    alert();
-    $(".hcontainer").empty();
 
-    html = "";
-    html += `<div class="icontainer">
+    //
+    $("#baten").click(function () {
+      $(".hcontainer").empty();
+
+      html = "";
+      html += `<div class="icontainer">
                     <div class="rules">
                         <p class="p-1">
                             Jawab pertanyaan berikut berdasarkan seberapa sering kamu mengalami situasi tersebut dalam kurun waktu 4
@@ -47,13 +46,12 @@ $(document).ready(function () {
                         <button id="next" href="">Lanjut</button>
                     </div>
                  </div>`;
-    $(".hcontainer").append(html);
-  });
+      $(".hcontainer").append(html);
 
-  $("#next").click(function () {
-    $(".icontainer").empty();
-    html = "";
-    html += `<div class="pcontainer">
+      $("#next").click(function () {
+        $(".icontainer").empty();
+        html = "";
+        html += `<div class="pcontainer">
           <div class="pertanyaan1">
               <h3>Pertanyaan
               </h3>
@@ -69,6 +67,8 @@ $(document).ready(function () {
               <button class="btn">Selalu</button>
           </div>
       </div>`;
-    $(".icontainer").append(html);
+        $(".icontainer").append(html);
+      });
+    });
   });
 });
